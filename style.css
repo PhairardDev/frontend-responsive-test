@@ -73,8 +73,8 @@ div.image-cover-02 {
     background: #603EBE;
     border-radius: 2.5px;
 }
-.text-content__heading > span.light-underline {
-    color: #8F6BE8;
+.text-purple {
+    color: #8F6BE8 !important;
 }
 .text-content__heading > span.light-underline::after {
     content: "";
