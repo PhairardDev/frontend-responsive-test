@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+}
+p {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+}
+.text-content-row {
+    padding: 2rem 0;
+}
+
+div.image-cover {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 30%;
+    height: 80%;
+    left: 10%;
+    background-image: url("assets/footballer-01.png");
+    background-size: cover;
+    background-position: center;
+}
+div.image-cover-02 {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 40%;
+    height: 65%;
+    right: 10%;
+    background-image: url("assets/basketballer.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.text-heading {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 90px;
+    line-height: 105px;
+    color: #E7E7E7;
+}
+.text-content__heading {
+    display: flex;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 42px;
+    letter-spacing: 1.5px;
+    color: #C2C2C2;
+}
+.text-content__heading > span {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 1.5px;
+    color: #000000;
+    margin-top: 6px;
+    margin-right: 10px
+}
+.text-content__heading > span::after {
+    content: "";
+    float:left;
+    width:100%; 
+    height:6px;
+    background: #603EBE;
+    border-radius: 2.5px;
+}
+.text-content__heading > span.light-underline {
+    color: #8F6BE8;
+}
+.text-content__heading > span.light-underline::after {
+    content: "";
+    float:left;
+    width:100%; 
+    height:6px;
+    background: #fff;
+    border-radius: 2.5px;
+}
+
+.bg-white {
+    background-color: #ffffff;
+}
+.bg-grey {
+    background-color: #F5F4F9;
+}
+.bg-purple {
+    background-color: #5E3DB3;
+}
+.bg-dark-purple {
+    background-color: #090C35;
+}
+.bg-dark-purple > p {
+    color: #fff;
+}
+.carousel-inner {
+    background: #F5F4F9;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+.carousel-indicators [data-bs-target] {
+    width: 10px !important;
+    height: 10px !important;
+    border-radius: 100% !important;
+    background-color: #D8D8D8 !important;
+    opacity: 1 !important;
+}
+.carousel-indicators .active{
+    background-color: #603EBE !important;
+}
+.content-mobile {
+    display: none;
+}
+
+
+@media only screen and (max-width:820px) {
+    p {
+        font-size: 18px;
+    }
+    div.image-cover {
+        top: 10%;
+        left: 0;
+        width: 30%;
+        height: 50%;
+        background-position-x: right;
+    }
+    div.image-cover-02 {
+        width: 50%;
+        right: 0;
+        margin-top: 3rem;
+        height: 50%;
+        background-position-x: left;
+    }
+}
+
+@media only screen and (max-width:420px) {
+
+    .content-mobile {
+        display: block;
+    }
+    p {
+        font-size: 15px;
+        line-height: 18px;
+    }
+    .text-heading {
+        font-size: 50px;
+        line-height: 59px;
+        padding-left: 19px;
+    }
+    .text-content__heading {
+        font-size: 28px;
+        line-height: 33px;
+        
+    }
+    .text-content__heading > span {
+        font-size: 14px;
+        line-height: 16px;
+        margin-top: 4px;
+        margin-right: 8px
+    }
+    .text-content__heading > span::after {
+        content: "";
+        float:left;
+        width:100%; 
+        height:6px;
+        background: #603EBE;
+        border-radius: 2.5px;
+    }
+    .text-content__heading > span.light-underline {
+        color: #8F6BE8;
+    }
+    .text-content__heading > span.light-underline::after {
+        content: "";
+        float:left;
+        width:100%; 
+        height:6px;
+        background: #fff;
+        border-radius: 2.5px;
+    }
+    .text-content-row {
+        display: none;
+    }
+    div.image-cover, div.image-cover-02 {
+        display: none;
+    }
+    .img-cover img {
+        z-index: 99999;
+        position: absolute;
+    }
+    #athlets-content-carousel{
+        margin-top: 420px;
+    }
+    #players-content-carousel {
+        margin-top: 390px;
+    }
+}
